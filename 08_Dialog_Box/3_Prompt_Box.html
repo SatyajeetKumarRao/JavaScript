@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Box</title>
+    <script>
+
+        /*
+        
+            A prompt() method (Prompt box) is used to get the input a value from user before entering a page.
+
+            When a prompt box pops up, it gives two options to click either "OK" or "Cancel" to proceed after entering an input value.
+
+            If we click on "OK" the box returns the input value. If we click on "Cancel" the box returns null.
+
+
+
+            Syntax: -      prompt("message");
+
+
+            // prompt always accept any input as string
+
+            if we want this inputted value in any other datatype then we need to typecast it.
+
+        */
+
+
+        let name = prompt("What is Your Name?");
+
+        if (name == "") {
+            alert("No Input");
+
+        }
+
+        else if (name == null) {
+
+            document.write("Sorry you press cancel");
+
+        }
+        else
+            document.write("Welcome ", name);
+
+
+        //example
+        let per = prompt("Enter Marks in Percentage: - ");  // prompt always accept any input as string
+
+        per = Number.parseInt(per); //converting string to number 
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+<h1>
+Hello buddy</h1>
+</body>
+
+</html>
